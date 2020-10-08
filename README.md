@@ -13,7 +13,7 @@ Happy coding!
 * Moby project at: <https://github.com/moby/moby/commit/a770dc191eea0a88236b4fb5575fe92efd356800>
     * At that time, go at version: `go version go1.13.14 linux/amd64` (Basically, you can download it from <https://golang.org/dl/go1.13.14.linux-amd64.tar.gz>)
 * YouCompleteMe at: <https://github.com/ycm-core/YouCompleteMe/commit/a76659610c500dc3515b1efcc7f3fffdfb6f7df2>
-* My `.vim` at: <https://github.com/jimlinntu/.vim2/commit/d3939410c3e80fdc81224b073a3acf65d2a65050>
+* Vim 8.2 (I installed it from `ppa:jonathonf/vim`) and My `.vim` at: <https://github.com/jimlinntu/.vim2/commit/d3939410c3e80fdc81224b073a3acf65d2a65050>
 
 ## Steps
 * Make sure your `go` executable can be found in the `$PATH` variable.
