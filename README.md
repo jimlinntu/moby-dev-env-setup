@@ -6,6 +6,7 @@ you can save time I have spent before and get to the fun part
 (developing with beautiful semantic completion in hand) ASAP!
 
 Happy coding!
+![](./semantic-completion.png)
 
 ## Settings (when I test it)
 * Ubuntu 18.04
