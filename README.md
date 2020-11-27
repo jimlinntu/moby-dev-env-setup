@@ -37,9 +37,14 @@ cd moby/
 vim cmd/dockerd/docker.go
 ```
 
+## go.mod for moby/moby and docker/cli
+* [moby-go.mod](./moby/moby/go.mod): <https://github.com/moby/moby> at 6c0a036
+* [docker-cli.mod](./docker/cli/go.mod): <https://github.com/docker/cli> at 5836f20
+
 ## Troubleshootings
 * (In Vim): `:YcmDebugInfo`
 * `go env`, `go env GOPATH`
+* I found that by keep typing: `go mod tidy`, you can find what is wrong with the current `go.mod`.
 
 ## Contributions
 Contributions are welcomed!
@@ -51,3 +56,10 @@ please let me know!
 * <https://medium.com/@adiach3nko/package-management-with-go-modules-the-pragmatic-guide-c831b4eaaf31>
 (I think the most helpful one)
 * <https://github.com/moby/buildkit/pull/1425>
+* <https://github.com/hashicorp/consul/issues/6019>
+* <https://github.com/kubernetes/kubernetes/issues/79384#issuecomment-505632294>
+    * You can simply append a commit hash at the end of the `replace` statement. And `go mod tidy` will find the current pseudo-version for you. See <https://golang.org/ref/mod#pseudo-versions> for more information.
+* <https://golang.org/ref/mod#pseudo-versions>:
+```
+Pseudo-versions never need to be typed by hand. Many commands accept a commit hash or a branch name and will translate it into a pseudo-version (or tagged version if available) automatically. For example:
+```
